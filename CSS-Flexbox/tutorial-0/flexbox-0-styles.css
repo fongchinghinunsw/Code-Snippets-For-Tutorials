@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  /* allows us to include the padding and border in an element's total
+  width and height */
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10%;
+  background-color: #262626;
+}
+
+#logo {
+  font-size: 20px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+li, a, button {
+  font-weight: 400;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+li {
+  padding: 10px 20px;
+}
+
+li a {
+  transition: all 0.3s ease 0s;
+}
+
+li a:hover {
+  color: #0088a9;
+}
+
+.top_links li {
+  display: inline-block;
+}
+
+button {
+  padding: 8px 20px;
+  background-color: rgba(0,140,170,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0,140,170,0.8);
+}
+
+.main {
+    display: flex;
+    flex: 1;
+}
+
+.nav {
+    background-color: #333333;
+    padding: 2rem 0;
+    flex: 1 1 5rem;
+}
+
+.article {
+    background-color: #4d4d4d;
+    padding: 1rem 0;
+    flex: 3 3;
+}
+
+.aside {
+    background-color: #333333;
+    padding: 1rem 0;
+    flex: 1 1 5rem;
+}
+
+.footer {
+    padding: 1rem 0;
+    background-color: #262626;
+}
+
+
+@media all and (max-width: 700px) {
+    .main {
+        flex-direction: column;
+    }
+}
