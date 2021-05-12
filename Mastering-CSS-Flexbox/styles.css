@@ -3,13 +3,6 @@ body {
 }
 
 .flex-container {
-  display: flex; /* or inline-flex */
-  /* flex-direction: column;  /* row-reverse, column, column-reverse */
-  /* flex-wrap: wrap; */ /* nowrap, wrap-reverse*/
-  height: 600px;
-  /* flex-flow: row-reverse wrap-reverse; */
-  /* justify-content: flex-end; */
-  align-items: flex-start; /* flex-end, center, baseline */
   border: 5px solid black;
 }
 
@@ -22,15 +15,12 @@ body {
 
 .item-1 {
   background-color: red;
-  /* padding-top: 5rem; */
 }
 .item-2 {
   background-color: skyblue;
-  /* padding-bottom: 3rem; */
 }
 .item-3 {
   background-color: tomato;
-  /* font-size: 4rem; */
 }
 .item-4 {
   background-color: MediumVioletRed;
