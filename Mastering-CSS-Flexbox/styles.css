@@ -3,7 +3,10 @@ body {
 }
 
 .flex-container {
+  display: flex;
   border: 5px solid black;
+  height: 500px;
+  align-items: center;
 }
 
 .flex-item {
@@ -15,15 +18,19 @@ body {
 
 .item-1 {
   background-color: red;
+  align-self: flex-start;
 }
 .item-2 {
   background-color: skyblue;
+  align-self: flex-end;
 }
 .item-3 {
   background-color: tomato;
+  align-self: center;
 }
 .item-4 {
   background-color: MediumVioletRed;
+  align-self: stretch;
 }
 .item-5 {
   background-color: MediumSpringGreen;
